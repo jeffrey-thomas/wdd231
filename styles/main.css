@@ -3,8 +3,8 @@
 
 
 :root{
-    --primary:hsl(207, 44%, 20%);;
-    --secondary:hsl(214, 41%, 90%);
+    --primary:#1d3549;
+    --secondary:#dbe4f0;
     --accent1:#ffdca0;
     --accent2:lightgray;
     --heading-font:Merriweather, serif;
@@ -12,7 +12,7 @@
     --nav-background-color:hsl(207, 44%, 15%);;
     --nav-link-color: #eeeeee;
     --nav-hover-link-color:white;
-    --nav-hover-background-color:hsl(207,44%,25%);
+    --nav-hover-background-color:#24435c;
 }
 
 *{
