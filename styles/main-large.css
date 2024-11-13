@@ -1,0 +1,17 @@
+@media screen and (min-width: 500px){
+    
+    nav{
+        display:flex;
+        flex-direction:row;
+    }
+
+    #menu{
+        display:none;
+    }
+
+    main{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+}

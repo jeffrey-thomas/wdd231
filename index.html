@@ -3,9 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD231</title>
+    <title>WDD231 - Home Page - Jeff Thomas</title>
+    <meta name="description" content="WDD231 Default home Page">
+    <meta name="author" content="Jeff Thomas">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/main-large.css">
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-    
+    <header>
+        <h1>Jeff Thomas</h1>
+        <a href="#" id="menu"></a>
+        <nav>
+            <a href="#" class="active">Home</a>
+            <a href="#">Chamber</a>
+            <a href="./details.html">GitHub Profile</a>
+            <a href="www.linkedin.com/in/jeffrey-c-thomas">Linked In</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Course Work</h2>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+        <section>
+            <h2>Washington, U.S.A.</h2>
+            <figure>
+                <img src="./images/washington.webp" alt="Washington Forest">
+                <figcaption>Washington State, U.S.A.</figcaption>
+            </figure>
+        </section>
+        <section id="program">
+            <h2>Web and Computer Programming Certificate</h2>
+            <div id="course-controls">
+                <button id="btn-all">All Courses</button>
+                <button id="btn-cse">CSE Courses</button>
+                <button id="btn-wdd">WDD Courses</button>
+            </div>
+
+            <p id="credits">Credits: 0</p>
+
+            <div id="courses"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> - Jeff Thomas - Washington, USA</p>
+        <p id="lastmodified"></p>
+    </footer>
 </body>
 </html>
