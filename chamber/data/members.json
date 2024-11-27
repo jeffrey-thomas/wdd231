@@ -1,0 +1,73 @@
+{
+    "members":[
+        {
+            "name":"Business 1",
+            "tagline":"We mean business.",
+            "address":"987 NE 65th Ave\nVancouver, WA 98684",
+            "phone":"800-555-5555",
+            "url":"fakeurl.com",
+            "imageurl":"images/business1.svg",
+            "membership":1,
+            "joinDate":"November 11, 2011"
+        },
+        {
+            "name":"Murphy's Law",
+            "tagline":"For when things go wrong.",
+            "address":"1248 SE 204th St\nVancouver, WA 98684",
+            "phone":"800-555-5555",
+            "url":"fakeurl2.com",
+            "imageurl":"images/law.svg",
+            "membership":2,
+            "joinDate":"October 10, 2010"
+        },
+        {
+            "name":"Fibonacci's Pizza",
+            "tagline":"Tasty triangles.",
+            "address":"11235 SW 813th Ave\nVancouver, WA 98684",
+            "phone":"800-555-5555",
+            "url":"fakeurl3.com",
+            "imageurl":"images/pizza.svg",
+            "membership":3,
+            "joinDate":"January 2, 1987"
+        },
+        {
+            "name":"Markov Plumbing",
+            "tagline":"Repairs done right.",
+            "address":"12513 NE 29th St\nVancouver, WA 98684",
+            "phone":"800-555-5555",
+            "url":"fakeurl4.com",
+            "imageurl":"images/plumbing.svg",
+            "membership":2,
+            "joinDate":"June 7, 2008"
+        },        {
+            "name":"Five Dudes Sandwiches",
+            "tagline":"It takes 5 of us to make 1 sandwich.",
+            "address":"12345 SW 67th Ave\nVancouver, WA 98684",
+            "phone":"800-555-5555",
+            "url":"fakeurl5.com",
+            "imageurl":"images/sandwich.svg",
+            "membership":1,
+            "joinDate":"March 16, 2017"
+        },
+        {
+            "name":"Business 6",
+            "tagline":"We mean six times as much business as Business 1",
+            "address":"7986 SE 49th Ave\nVancouver, WA 98684",
+            "phone":"800-555-5555",
+            "url":"fakeurl6.com",
+            "imageurl":"images/business6.svg",
+            "membership":2,
+            "joinDate":"September 10, 2011"
+        },
+        {
+            "name":"Business Seven",
+            "tagline":"CATCHPHRASE!",
+            "address":"457 SW 23rd Ave\nVancouver, WA 98684",
+            "phone":"800-555-5555",
+            "url":"fakeurl7.com",
+            "imageurl":"images/seven.svg",
+            "membership":1,
+            "joinDate":"December 13, 2014"
+        }
+    ]
+}

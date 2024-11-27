@@ -1,0 +1,39 @@
+@media screen and (min-width: 510px){
+
+    header{
+        grid-template-columns: 60px auto 275px;
+    }
+
+    nav{
+        display:flex;
+        width:fit-content;
+        grid-row:1;
+        grid-column:3;
+        justify-self: end;
+        transition:none;
+    }
+
+    nav ul{
+        display:flex;
+        list-style-type: none;
+    }
+
+    nav a{
+        height:50px;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #menu{
+        display:none;
+    }
+
+    footer{
+        grid-template-columns:1fr 1fr;
+        grid-template-rows:1fr;
+        padding: 1rem 3rem;
+        gap:3rem;
+    }
+
+}

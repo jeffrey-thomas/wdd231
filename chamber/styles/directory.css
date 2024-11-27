@@ -1,0 +1,112 @@
+#controls{
+    padding-bottom:1rem;
+    text-align: center;
+}
+
+#controls button{
+    padding:0.4rem;
+    border-radius: 0.4rem;
+    width:44px;
+    height:44px;
+    font-size: 1.5rem;
+}
+
+#controls button.active{
+    background-color: var(--accent1);
+}
+
+#members.grid{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+    gap:1rem;
+    align-items: center;
+    justify-items: center;
+}
+
+.grid .member-card{
+    background-color: #fff;
+    box-shadow:0px 2px 4px black;
+    padding:0.5rem;
+    text-align:center;
+    width:275px;
+}
+
+.grid .member-name{
+    font-size:1.2rem;
+    text-align:center;
+}
+
+.grid .member-tagline{
+    font-style: italic;
+    padding-bottom:0.5rem;
+}
+
+.grid .member-info{
+    display:grid;
+    grid-template-areas: "logo address" "logo phone" "logo url";
+    gap:0.5rem;
+}
+
+.grid .member-logo{
+    grid-area:logo;
+}
+
+.grid .member-address{
+    grid-area:address;
+}
+
+.grid .member-phone{
+    grid-area:phone;
+}
+
+.grid .member-url{
+    grid-area:url;
+}
+
+.list .member-card:nth-child(even){
+    background-color: white;
+}
+
+.list .member-card:nth-child(odd){
+    background-color: var(--secondary);
+}
+
+.list .member-card:first-child{
+    border-top:1px solid var(--primary)
+}
+
+.list .member-card{
+    display:grid;
+    grid-template-rows: 1fr 2fr;
+    align-items: center;
+    padding:0.2rem 0.5rem;
+    border-bottom:1px solid var(--primary);
+    border-left:1px solid var(--primary);
+    border-right:1px solid var(--primary);
+}
+
+.list .member-info{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items:center;
+}
+
+.list .member-name{
+    font-size:1rem;
+}
+
+.list .member-logo, .list .member-tagline{
+    display:none;
+}
+
+.list .member-address{
+    justify-self: start;
+}
+
+.list .member-phone{
+    justify-self:center;
+}
+
+.list .member-url{
+    justify-self: end;
+}
