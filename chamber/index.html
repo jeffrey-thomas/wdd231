@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD231 - Chamber Home Page - Jeff Thomas</title>
+
+    <meta name="description" content="WDD231 chamber of commerce home page">
+    <meta name="author" content="Jeff Thomas">
+
+    <meta property="og:title" content="WDD231 - Chamber of Commerce Home Page- Jeff Thomas">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jeffrey-thomas.github.io/wdd231/chamber/index.html">
+    <meta property="og:image" content="https://jeffrey-thomas.github.io/wdd231/chamber/images/social.webp">
+
+    <link rel="icon" href="favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Quicksand:wght@300..700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/home.css">
+
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/weather.js" type="module"></script>
+    <script src="scripts/home.js" type="module" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <img src="images/river.svg" alt="chamber of commerce logo" width="40" height="40">
+        <p>Vancouver, WA Chamber of Commerce</p>
+        <a href="#" id="menu"></a>
+
+        <nav>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Discover</a></li>
+                <li><a href="./directory.html">Directory</a></li>
+                <li><a href="#">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <div class="hero">
+
+            <picture>
+                <source srcset="./images/hero.webp" media="(min-width:675px)">
+                <img src="./images/hero-mobile.webp" alt="Columbia river and Vancouver,WA" width="1600" height="900">
+            </picture>
+
+            <div class="overlay">
+                <h1>Vanvouver, WA Chamber of Commerce </h1>
+                <a href="./join.html">Join Us!</a>
+            </div>
+
+        </div>
+
+        <section id="current-events">
+            <h2>Current Events</h2>
+            <h3>Holiday Makers Market</h3>
+            <p>The Valiant Ballroom will host a Holidays Makers Market from 10 a.m. to 4 p.m. Nov. 29 (Black Friday) and Nov. 30 (Small Business Saturday) at 109 W. Ninth St., Vancouver. Shop for handmade crafts, artisanal foods, original artworks, home decor, fashion, accessories and one-of-a-kind products.</p>
+            <a href="https://events.columbian.com/event/holiday-makers-market-at-valiant-ballroom/2024-11-29/">article at The Columbian</a>
+        </section>
+
+        <section id="weather">
+            <h2>Weather</h2>
+            <h3>Current</h3>
+            <div id="current-weather">
+                <p id="weather-temp" class="bold"></p>
+                <img id="weather-icon" alt="Weather Icon">
+                <p id="weather-desc" class="bold"></p>
+            </div>
+            <h3>Forecast</h3>
+            <div id="forecast"></div>
+        </section>
+
+        <section id="spotlights">
+            <h2>Member Spotlights</h2>
+            <div id="spotlight-cards"></div>
+        </section>
+
+
+    </main>
+    <footer>
+        <div>
+            Vancouver WA Chamber of Commerce<br>
+            1111 Main Street, Suite 201<br>
+            Vancouver, WA 98660<br>
+            yourchamber@vancouverusa.com<br>
+            360.694.2588
+        </div>
+        <div>
+            WDD 231 Class Project<br>
+            Jeff Thomas<br>
+            &copy; <span id="currentyear"></span><br>
+            <span id="lastmodified"></span>
+        </div>
+    </footer>
+</body>
+
+</html>
