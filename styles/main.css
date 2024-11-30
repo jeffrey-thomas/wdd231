@@ -191,3 +191,54 @@ figure img{
 #program{
     grid-column: 1/3;
 }
+
+dialog{
+    background-color: transparent;
+    border:0;
+    width:90%;
+    max-width:50rem;
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%)
+}
+
+dialog h2{
+    width:100%;
+    height:44px;
+}
+
+dialog div{
+    width:100%;
+    background-color: var(--secondary);
+    color:var(--primary);
+    border-radius: 0 0 1rem 1rem;
+    padding:1rem;
+}
+
+dialog p{
+    padding:0.5rem;
+}
+
+::backdrop{
+    background-color: rgba(0,0,0,0.5);
+}
+
+dialog button{
+    position:absolute;
+    top:0;
+    right:1rem;
+    background-color: var(--primary);
+    border:0;
+    color:var(--accent1);
+    padding:0.25rem;
+    font-size:1.5rem;
+    font-weight:bold;
+    width:44px;
+    height:44px;
+    border-radius:22px;
+}
+
+dialog button:hover{
+    background-color:var(--nav-hover-background-color);
+}

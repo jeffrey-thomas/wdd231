@@ -100,6 +100,9 @@ function displayCourses(courseList){
         if(course.completed){
             p.classList.add('complete')
         }
+        p.addEventListener('click',()=>{
+            showCourseDetails(course)
+        })
         courseDiv.appendChild(p);
     })
 
@@ -125,3 +128,53 @@ cseButton.addEventListener('click',()=>{
 wddButton.addEventListener('click',()=>{
     displayCourses(courses.filter((course)=>course.subject==='WDD'))
 })
+
+const details = document.querySelector('#details-dialog')
+
+window.addEventListener('click',(event)=>{
+    if(event.target===details)
+        details.close()
+})
+function showCourseDetails(course){
+    while(details.firstChild)
+        details.removeChild(details.firstChild)
+
+    const closeButton = document.createElement('button')
+    closeButton.id = 'close-dialog'
+    closeButton.innerText = 'X'
+
+    const courseId = document.createElement('h2')
+    courseId.innerText = `${course.subject} ${course.number}`
+
+    const info = document.createElement('div')
+
+    const title = document.createElement('h3')
+    title.innerText = course.title
+
+    const credits = document.createElement('p')
+    credits.innerHTML = `<strong>Credits:</strong> ${course.credits}`
+
+    const certificate = document.createElement('p')
+    certificate.innerHTML = `<strong>Certificate:</strong> ${course.certificate}`
+
+    const description = document.createElement('p')
+    description.innerText = course.description
+
+    const techs = document.createElement('p')
+    techs.innerHTML = `<strong>Technologies:</strong> ${course.technology.join(', ')}`
+
+    details.appendChild(closeButton)
+    details.appendChild(courseId)
+    info.appendChild(title)
+    info.appendChild(credits)
+    info.appendChild(certificate)
+    info.appendChild(description)
+    info.appendChild(techs)
+    details.appendChild(info)
+
+    details.showModal()
+
+    closeButton.addEventListener('click',()=>{
+        details.close()
+    })
+}
