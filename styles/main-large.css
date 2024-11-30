@@ -1,8 +1,28 @@
-@media screen and (min-width: 500px){
+@media screen and (min-width: 585px){
     
+    header{
+        grid-template-columns: 225px auto;
+    }
+
     nav{
         display:flex;
-        flex-direction:row;
+        width:fit-content;
+        grid-row:1;
+        grid-column:2;
+        justify-self: end;
+        transition:none;
+    }
+
+    nav ul{
+        display:flex;
+        list-style-type: none;
+    }
+
+    nav a{
+        height:60px;
+        display:flex;
+        align-items: center;
+        justify-content: center;
     }
 
     #menu{

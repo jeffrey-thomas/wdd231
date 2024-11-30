@@ -2,17 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
 
-:root{
-    --primary:#1d3549;
+:root{ 
+    --primary:hsl(207, 43%, 20%);
     --secondary:#dbe4f0;
     --accent1:#ffdca0;
     --accent2:lightgray;
     --heading-font:Merriweather, serif;
     --paragraph-font:Quicksand, sans-serif;
-    --nav-background-color:hsl(207, 44%, 15%);;
-    --nav-link-color: #eeeeee;
-    --nav-hover-link-color:white;
-    --nav-hover-background-color:#24435c;
+    --nav-active: hsl(207, 44%, 10%);
+    --nav-link: #ffffff;
+    --nav-hover: hsl(207, 44%, 35%);
 }
 
 *{
@@ -43,61 +42,84 @@ h1{
     width:100%;
 }
 
-header{
+header {
     background-color: var(--primary);
-    color:var(--accent2);
+    color: var(--accent2);
+    display:grid;
+    grid-template-columns: 225px auto 60px;
+    grid-template-rows:60px auto;
+    align-items: center;
+}
+
+nav {
+    display: grid;
+    grid-template-rows: 0fr;
+    background-color: var(--primary);
+    transition:grid-template-rows 0.5s ease-out;
+}
+
+nav ul{
+    overflow: hidden;
+}
+
+nav a.active {
+    background-color: var(--nav-active);
+}
+
+nav a:hover,
+#menu:hover {
+    animation-name: glow;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    mix-blend-mode: luminosity;
+}
+
+@keyframes glow{
+    0%{
+        background-color: hsl(0,0%,35%);
+    }
+    100%{
+        background-color: hsl(0,0%,30%);
+    }
+}
+
+nav.open {
+    grid-template-rows: 1fr;
+}
+
+#menu {
+    background-color: var(--primary);
+    width:44px;
+    height:44px;
+    border-radius: 22px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    color:var(--nav-link);
+    text-decoration: none;
+    font-size:1.2rem;
+    grid-column: 3;
+}
+
+#menu::after {
+    content: "≡";
+}
+
+#menu.open::after {
+    content: "X";
 }
 
 nav{
-    display:none;
-    background-color:var(--nav-background-color);
-    justify-content:space-around;
+    grid-column: 1/4;
 }
 
 nav a{
-    display:block;
-    padding:10px;
-    color:var(--nav-link-color);
+    display: block;
+    padding: 0.5rem;
+    color: var(--nav-link);
     text-decoration: none;
-    font-size:1.2em;
-}
-
-nav a.active::after{
-    content:' ◂';
-}
-
-nav a:hover{
-    background-color: var(--nav-hover-background-color);
-    color:var(--nav-hover-link-color)
-}
-
-nav.open{
-    display:flex;
-    flex-direction:column;
-}
-
-#menu{
-    background-color: var(--nav-background-color);
-}
-
-#menu::before{
-    content:"≡";
-}
-
-#menu.open::before{
-    content:"X";
-}
-
-nav a, #menu{
-    display:block;
-    padding:0.5rem;
-    color:var(--nav-link-color);
-    text-decoration: none;
-    font-size:1.2rem;
-}
-
-nav a:hover, #menu:hover{
-    background-color: var(--nav-hover-background-color);
 }
 
 
@@ -144,6 +166,7 @@ section{
     border:1px solid black;
     border-radius:0.2rem;
     text-align:center;
+    cursor: pointer;
 }
 
 #courses p.complete{
@@ -169,7 +192,7 @@ section{
     text-align:center;
 }
 
-ul{
+section ul{
     margin-left:3rem;
 }
 
@@ -240,5 +263,5 @@ dialog button{
 }
 
 dialog button:hover{
-    background-color:var(--nav-hover-background-color);
+    background-color:var(--nav-hover);
 }
