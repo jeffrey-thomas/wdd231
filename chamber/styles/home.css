@@ -33,7 +33,7 @@ main{
 .hero a{
     font-size:1.5rem;
     font-family:var(--heading-font);
-    background-color: var(--accent2);
+    background-color: var(--accent1);
     color:var(--primary);
     padding:0.5rem;
     border-radius: 0.5rem;
@@ -42,11 +42,11 @@ main{
 }
 
 .hero a:hover{
-    background-color: var(--secondary);
+    box-shadow:inset 0 0 500px rgba(255,255,255,0.5);
 }
 
 .hero a:active{
-    background-color: var(--accent1);
+    box-shadow:inset 0 0 500px rgba(0,0,0,0.5);
 }
 
 section{

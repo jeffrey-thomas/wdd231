@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD231 - Chamber Directory - Jeff Thomas</title>
+    <title>WDD231 - Chamber Thank You - Jeff Thomas</title>
 
-    <meta name="description" content="WDD231 chamber of commerce directory">
+    <meta name="description" content="WDD231 - Chamber of Commerce Thank you Page">
     <meta name="author" content="Jeff Thomas">
 
-    <meta property="og:title" content="WDD231 - Chamber of Commerce Directory- Jeff Thomas">
+    <meta property="og:title" content="WDD231 - Chamber of Commerce Thank you- Jeff Thomas">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://jeffrey-thomas.github.io/wdd231/chamber/directory.html">
+    <meta property="og:url" content="https://jeffrey-thomas.github.io/wdd231/chamber/thankyou.html">
     <meta property="og:image" content="https://jeffrey-thomas.github.io/wdd231/chamber/images/social.webp">
 
     <link rel="icon" href="favicon.ico">
@@ -20,17 +20,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Quicksand:wght@300..700&display=swap"
-        rel="stylesheet"
-    >
+        rel="stylesheet">
 
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/large.css">
-    <link rel="stylesheet" href="styles/directory.css">
+    <link rel="stylesheet" href="styles/thankyou.css">
 
     <script src="scripts/main.js" defer></script>
-    <script src="scripts/members.js" type="module"></script>
-    <script src="scripts/directory.js" type="module"></script>
+    <script src="scripts/thankyou.js" type="module"></script>
 
 </head>
 
@@ -44,19 +42,22 @@
             <ul>
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="#">Discover</a></li>
-                <li><a href="#" class="active">Directory</a></li>
-                <li><a href="./join.html">Join</a></li>
+                <li><a href="./directory.html">Directory</a></li>
+                <li><a href="#" class="active">Join</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h1>Members Directory</h1>
-        <div id="controls">
-            View:
-            <button id="grid" class="active">᎒᎒᎒</button>
-            <button id="list">☷</button>
-        </div>
-        <div id="members" class="grid"></div>
+
+        <h1>Thank You For Applying!</h1>
+        <p>Please make sure the information below is correct.</p>
+        <p><Strong>Given Name:</Strong> <span id="given-name"></span></p>
+        <p><Strong>Last Name:</Strong> <span id="last-name"></span></p>
+        <p><Strong>Organization:</Strong> <span id="organization"></span></p>
+        <p><Strong>Title:</Strong> <span id="title"></span></p>
+        <p><Strong>Email:</Strong> <span id="email"></span></p>
+        <p><Strong>Phone:</Strong> <span id="phone"></span></p>
+
     </main>
     <footer>
         <div>
