@@ -36,4 +36,13 @@
         gap:3rem;
     }
 
+    #discover{
+        display:grid;
+        grid-template-columns: 1fr 2fr;
+    }
+
+    #discover img:hover{
+        box-shadow: 0 0 2rem var(--accent1);
+    }
+
 }
