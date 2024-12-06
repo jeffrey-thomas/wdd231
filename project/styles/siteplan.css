@@ -1,0 +1,28 @@
+:root{
+    --background:#F7F3DE;
+    --heading:#2C382B;
+    --text:#3E4551;
+    --accent:#B9314F;
+}
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+main{
+    background-color: var(--background);
+    color:var(--text);
+    display:flex;
+    flex-direction: column;
+    gap:2rem;
+    font-family:"Raleway", sans-serif;
+    padding:1rem;
+}
+
+h1,h2,h3,h4,h5,h6{
+    color:var(--heading);
+    font-family:"Cormorant Garamond", serif;
+    padding-bottom:0.5rem;
+}
