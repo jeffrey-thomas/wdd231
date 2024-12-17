@@ -1,0 +1,136 @@
+{
+    "sightings":[
+        {
+            "speciesId":[0,0,3],
+            "location":"Ridgefield National Wildlife Refuge",
+            "date":"2024-11-11",
+            "user":"Jeff Thomas"
+        },
+        {
+            "speciesId":[0,0,2],
+            "location":"Ridgefield National Wildlife Refuge",
+            "date":"2024-11-11",
+            "user":"Jeff Thomas"
+        },
+        {
+            "speciesId":[0,1,14],
+            "location":"Ridgefield National Wildlife Refuge",
+            "date":"2024-11-11",
+            "user":"Jeff Thomas"
+        },
+        {
+            "speciesId":[0,0,1],
+            "location":"Ridgefield National Wildlife Refuge",
+            "date":"2024-11-11",
+            "user":"Jeff Thomas"
+        },
+        {
+            "speciesId":[0,2,6],
+            "location":"Ridgefield National Wildlife Refuge",
+            "date":"2024-11-11",
+            "user":"Jeff Thomas"
+        },
+        {
+            "speciesId":[0,3,0],
+            "location":"Ridgefield National Wildlife Refuge",
+            "date":"2024-11-11",
+            "user":"Jeff Thomas"
+        },
+        {
+            "speciesId":[12,0,6],
+            "location":"Ridgefield National Wildlife Refuge",
+            "date":"2024-11-11",
+            "user":"Jeff Thomas"
+        },
+        {
+            "speciesId":[15,0,7],
+            "location":"Ridgefield National Wildlife Refuge",
+            "date":"2024-11-11",
+            "user":"Jeff Thomas"
+        },
+        {
+            "speciesId":[19,0,0],
+            "location":"Ridgefield National Wildlife Refuge",
+            "date":"2024-11-11",
+            "user":"Jeff Thomas"
+        },
+        {
+            "speciesId":[15,0,6],
+            "location":"Ridgefield National Wildlife Refuge",
+            "date":"2024-11-11",
+            "user":"Jeff Thomas"
+        },
+        {
+            "speciesId":[12,0,6],
+            "location":"Ridgefield National Wildlife Refuge",
+            "date":"2024-11-11",
+            "user":"Kristie Thomas"
+        },
+        {
+            "speciesId":[19,0,3],
+            "location":"Ridgefield National Wildlife Refuge",
+            "date":"2024-11-11",
+            "user":"Jeff Thomas"
+        },
+        {
+            "speciesId":[15,0,0],
+            "location":"Steigerwald Lake National Wildlife Refuge",
+            "date":"2024-06-20",
+            "user":"Jeff Thomas"
+        },
+        {
+            "speciesId":[19,0,0],
+            "location":"Steigerwald Lake National Wildlife Refuge",
+            "date":"2024-06-20",
+            "user":"Jeff Thomas"
+        },
+        {
+            "speciesId":[15,0,11],
+            "location":"Steigerwald Lake National Wildlife Refuge",
+            "date":"2024-06-20",
+            "user":"Jeff Thomas"
+        },
+        {
+            "speciesId":[14,0,0],
+            "location":"Steigerwald Lake National Wildlife Refuge",
+            "date":"2024-06-20",
+            "user":"Jeff Thomas"
+        },
+        {
+            "speciesId":[20,6,3],
+            "location":"Steigerwald Lake National Wildlife Refuge",
+            "date":"2024-06-20",
+            "user":"Jeff Thomas"
+        },
+        {
+            "speciesId":[20,6,5],
+            "location":"Steigerwald Lake National Wildlife Refuge",
+            "date":"2024-06-20",
+            "user":"Jeff Thomas"
+        },
+        {
+            "speciesId":[12,0,0],
+            "location":"Steigerwald Lake National Wildlife Refuge",
+            "date":"2022-07-13",
+            "user":"Jeff Thomas"
+        },
+        {
+            "speciesId":[12,0,6],
+            "location":"Steigerwald Lake National Wildlife Refuge",
+            "date":"2022-07-13",
+            "user":"Jeff Thomas"
+        },
+        {
+            "speciesId":[0,0,1],
+            "location":"Steigerwald Lake National Wildlife Refuge",
+            "date":"2022-07-13",
+            "user":"Jeff Thomas"
+        },
+        {
+            "speciesId":[15,0,6],
+            "location":"Steigerwald Lake National Wildlife Refuge",
+            "date":"2022-07-13",
+            "user":"Jeff Thomas"
+        }
+    ]
+}

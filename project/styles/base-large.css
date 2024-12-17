@@ -1,0 +1,41 @@
+@media screen and (min-width: 500px){
+
+    header{
+        grid-template-columns: 60px auto 210px;
+    }
+
+    nav{
+        display:flex;
+        width:fit-content;
+        grid-row:1;
+        grid-column:3;
+        justify-self: end;
+        transition:none;
+        border-radius: 25px 0 0 25px;
+    }
+
+    nav ul{
+        display:flex;
+        list-style-type: none;
+    }
+
+    nav a{
+        height:50px;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav li:first-child{
+        border-radius:25px 0 0 25px;
+    }
+    
+    nav li:first-child a{
+        border-radius:25px 0 0 25px;
+    }
+
+    #menu{
+        display:none;
+    }
+
+}
